@@ -1,0 +1,4 @@
+import stanza 
+text = "Apple is looking at buying a UK startup for $1 billion"
+nlp = stanza.Pipeline(lang='en', processors='tokenize,pos,lemma')
+doc = nlp(text)

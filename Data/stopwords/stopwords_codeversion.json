@@ -1,0 +1,225 @@
+[
+    {
+        "db_id": "california_schools",
+        "stopwords": [
+            "DOCType",
+            "SOCType",
+            "EILCode",
+            "CALPADS",
+            "EILName",
+            "DOC",
+            "(NCES)",
+            "ID",
+            "NCES",
+            "funding",
+            "K-12",
+            "FRPM",
+            "telecomumication",
+            "mailing",
+            "CALPADS.",
+            "CDSCode",
+            "(CALPADS)",
+            "SOC",
+            "NSLP",
+            "NCESDist",
+            "IRC",
+            "SAT"
+        ]
+    },
+    {
+        "db_id": "card_games",
+        "stopwords": [
+            "rec",
+            "MTGJSON",
+            "supertype",
+            "promo",
+            "non-foil",
+            "MTGJSON.",
+            "EDHRec",
+            "uppercase",
+            "gameplay",
+            "ASCII",
+            "ID",
+            "ISO",
+            "etc.",
+            "unicode"
+        ]
+    },
+    {
+        "db_id": "codebase_community",
+        "stopwords": [
+            "url",
+            "upvote",
+            "downvote",
+            "GUID",
+            "wiki"
+        ]
+    },
+    {
+        "db_id": "debit_card_specializing",
+        "stopwords": [
+            "ID"
+        ]
+    },
+    {
+        "db_id": "european_football_2",
+        "stopwords": [
+            "BSH",
+            "SJH",
+            "SJA",
+            "SJD",
+            "goalkeep",
+            "BWA",
+            "PSD",
+            "PSA",
+            "WHD",
+            "gk_reflexe",
+            "BWH",
+            "IWH",
+            "GBA",
+            "VCD",
+            "GBH",
+            "LBH",
+            "IWD",
+            "LBA",
+            "WHH",
+            "markingscore",
+            "WHA",
+            "BSA",
+            "GBD",
+            "VCH",
+            "PSH",
+            "dribbling",
+            "BWD",
+            "BSD",
+            "1st",
+            "long_shot",
+            "IWA",
+            "api",
+            "LBD",
+            "VCA"
+        ]
+    },
+    {
+        "db_id": "financial",
+        "stopwords": [
+            "A6",
+            "A4",
+            "A7",
+            "A3",
+            "A12",
+            "A16",
+            "A15",
+            "A13",
+            "A2",
+            "A10",
+            "A9",
+            "acount",
+            "A14",
+            "A11",
+            "A5",
+            "A8"
+        ]
+    },
+    {
+        "db_id": "formula_1",
+        "stopwords": [
+            "ID"
+        ]
+    },
+    {
+        "db_id": "student_club",
+        "stopwords": [
+            "US",
+            "ZIP"
+        ]
+    },
+    {
+        "db_id": "superhero",
+        "stopwords": [
+            "kg",
+            "cm"
+        ]
+    },
+    {
+        "db_id": "thrombosis_prediction",
+        "stopwords": [
+            "CRP",
+            "U-PRO",
+            "anti-scl70",
+            "TAT2",
+            "IGM",
+            "TG",
+            "DNA",
+            "PT",
+            "IGG",
+            "PIC",
+            "IgA",
+            "CHO",
+            "YYMMDD",
+            "T-",
+            "CENTROMEA",
+            "SM",
+            "RF",
+            "CRE",
+            "anti-ribonuclear",
+            "AST",
+            "RNP",
+            "(YYMMDD)",
+            "ANA",
+            "RVVT",
+            "SEX",
+            "ALB",
+            "C3",
+            "ID",
+            "RA",
+            "C4",
+            "CPK",
+            "FG",
+            "RBC",
+            "IgG",
+            "HGB",
+            "II",
+            "ALT",
+            "IgM",
+            "anti-centromere",
+            "T-BIL",
+            "T-CHO",
+            "anti-nucleus",
+            "C-",
+            "TAT",
+            "APTT",
+            "SC170",
+            "LAC",
+            "SSA",
+            "phosphokinase",
+            "GPT",
+            "M",
+            "KCT",
+            "UA",
+            "aCL",
+            "DNA-",
+            "ALP",
+            "DNA-II",
+            "transaminase",
+            "WBC",
+            "PLT",
+            "RAHA",
+            "UN",
+            "GOT",
+            "BIL",
+            "IGA",
+            "U-",
+            "PRO",
+            "TP",
+            "SSB",
+            "LDH",
+            "HCT",
+            "GLU"
+        ]
+    },
+    {
+        "db_id": "toxicology",
+        "stopwords": []
+    }
+]
