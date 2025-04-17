@@ -120,10 +120,7 @@ def classifier(input: ClassifierInput) -> List[str]:
             for idx, is_selected in enumerate(predictions):
                 component = components_list[idx]
                 if is_selected and component not in [
-                    'select', 'from', 'on', 'multi-select', 'multi-join', 
-                    'union', 'where-or', 'where-between', 'where-like', 
-                    'where-in', 'group by', 'having', 'distinct', 'asc',
-                    'sum', 'avg', 'min', 'max'
+                    'select', 'from'
                 ]:
                     filtered_components.append(component)
             
