@@ -14,40 +14,8 @@ from Tools.BM25_test import BM25Fuzzy
 import re
 
 def LCS(str1_orig: str, str2_orig: str, overlap_threshold1=0.2, overlap_threshold2=0.1):
-    """
-    计算最长公共子串(LCS)。
-    """
     str1 = str1_orig.lower()
-    str2 = str2_orig.lower()
-    
-    # if ' ' in str2:
-    #     keywords = str2.split()
-    #     total_match_length = 0
-    #     total_keywords_length = sum(len(k) for k in keywords)
-        
-    #     for keyword in keywords:
-    #         m, n = len(str1), len(keyword)
-    #         dp = [[0] * (n + 1) for _ in range(m + 1)]
-    #         max_length = 0
-            
-    #         for i in range(1, m + 1):
-    #             for j in range(1, n + 1):
-    #                 if str1[i - 1] == keyword[j - 1]:
-    #                     dp[i][j] = dp[i - 1][j - 1] + 1
-    #                     if dp[i][j] > max_length:
-    #                         max_length = dp[i][j]
-    #                 else:
-    #                     dp[i][j] = 0
-            
-    #         total_match_length += max_length
-        
-    #     overlap_ratio1 = total_match_length / total_keywords_length if total_keywords_length > 0 else 0
-    #     overlap_ratio2 = total_match_length / len(str1) if len(str1) > 0 else 0
-        
-    #     if overlap_ratio1 >= overlap_threshold1 and overlap_ratio2 >= overlap_threshold2:
-    #         return {str1_orig: total_match_length}
-    #     return {str1_orig: 0}
-    
+    str2 = str2_orig.lower()    
     m, n = len(str1), len(str2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]
     max_length = 0
@@ -69,9 +37,6 @@ def LCS(str1_orig: str, str2_orig: str, overlap_threshold1=0.2, overlap_threshol
     return {str1_orig: (0,0)}
 
 def apply_bm25_matching(items, keyword, threshold=0.5):
-    """
-    Use BM25Fuzzy algorithm to match items
-    """
     if not items or not keyword:
         return []
     
@@ -165,7 +130,6 @@ def filter(input: Annotated[TableColumnFilter, "Input parameters for table colum
                             relate_tables_by_column_dict[table_name_by_column_name[0]] = [column]
 
     relate_tables_by_column_names = list(set(relate_tables_by_column_names))
-    print(3)
     entity_match_results = defaultdict(lambda: defaultdict(set))
     
     # 3. Entity Matching
@@ -206,7 +170,6 @@ def filter(input: Annotated[TableColumnFilter, "Input parameters for table colum
             execution_time = time.time() - start_time
             print(f"Keyword '{keyword}' processing completed, time: {execution_time:.2f} seconds")
 
-    print(4)
     relate_tables_by_entity = list(set(relate_tables_by_entity))
 
     # 4. Description Matching
